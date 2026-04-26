@@ -4,9 +4,10 @@ import { SpecsTable } from "@/components/SpecsTable";
 import { SchematicsSection } from "@/components/SchematicsSection";
 
 export const metadata: Metadata = {
-  title: "About — Prodigal Swan",
+  title: "About",
   description:
     "How a 1996 Taylor-Dunn cargo mover became a fire-breathing mechaswan. The Beezus origin, the 2016 rebirth, and the Vegas-to-playa annual rampage.",
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

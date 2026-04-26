@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "History — Prodigal Swan",
+  title: "History",
   description:
     "From Beezus Christ Supercar to a 2016 rebirth — the long story of how Prodigal Swan came to be.",
+  alternates: { canonical: "/history" },
 };
 
 export default function HistoryPage() {

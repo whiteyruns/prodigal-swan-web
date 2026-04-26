@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bios — Prodigal Swan",
+  title: "Bios",
   description:
     "The Dust to Dust Collective and the misfits who built Prodigal Swan.",
+  alternates: { canonical: "/bios" },
 };
 
 export default function BiosPage() {

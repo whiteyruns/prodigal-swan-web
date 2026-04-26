@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Camp — Prodigal Swan",
+  title: "Camp",
   description:
     "Swan Forest Camp at Burning Man — two art cars, one camp, Black Rock City.",
+  alternates: { canonical: "/camp" },
 };
 
 export default function CampPage() {
