@@ -1,4 +1,5 @@
 import { Reveal } from "./Reveal";
+import { BookingForm } from "./BookingForm";
 
 const includes = [
   { n: "01", t: "Trained driver for the full event", b: "incl." },
@@ -62,26 +63,7 @@ export function BookingCard() {
             </Reveal>
 
             <Reveal delay={3}>
-              <div className="flex flex-wrap items-center gap-4">
-                <a
-                  href="mailto:info@prodigalswan.com?subject=Booking%20Inquiry"
-                  className="group inline-flex min-h-12 items-center gap-3.5 border border-flame bg-flame px-7 py-4 text-[13px] font-semibold uppercase tracking-[0.18em] text-[#1a0e04] transition-all hover:-translate-y-px hover:bg-[#ffa247] hover:shadow-[0_0_40px_rgba(232,145,58,.55),0_0_80px_rgba(255,106,31,.25),inset_0_0_12px_rgba(255,255,255,.18)]"
-                >
-                  Get in touch
-                  <span
-                    aria-hidden
-                    className="font-display text-lg transition-transform group-hover:translate-x-1"
-                  >
-                    →
-                  </span>
-                </a>
-                <a
-                  href="mailto:info@prodigalswan.com"
-                  className="font-mono text-[11px] uppercase tracking-[0.24em] text-dust transition-colors hover:text-flame"
-                >
-                  info@prodigalswan.com
-                </a>
-              </div>
+              <BookingForm />
             </Reveal>
           </div>
 

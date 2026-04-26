@@ -15,10 +15,10 @@ export function Footer() {
           <div className="text-[13px] tracking-wider text-dust">
             © 2026 Prodigal Swan · Las Vegas, NV ·{" "}
             <a
-              href="mailto:info@prodigalswan.com"
+              href="/#booking"
               className="text-ash transition-colors hover:text-flame"
             >
-              info@prodigalswan.com
+              Bookings &rarr;
             </a>
           </div>
           <div className="flex items-center gap-6 font-mono text-[11px] uppercase tracking-[0.28em] text-ash">
