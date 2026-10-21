@@ -60,12 +60,13 @@ export function BookingForm() {
       {/* Formspree honeypot — bots fill this, get filtered server-side */}
       <input type="text" name="_gotcha" tabIndex={-1} autoComplete="off" className="hidden" />
 
-      <Field label="Your name" name="name" required disabled={isSubmitting} />
+      <Field label="Your name" name="name" required maxLength={120} disabled={isSubmitting} />
       <Field
         label="Email"
         name="email"
         type="email"
         required
+        maxLength={254}
         disabled={isSubmitting}
       />
       <Field
@@ -74,6 +75,7 @@ export function BookingForm() {
         as="textarea"
         rows={5}
         required
+        maxLength={5000}
         placeholder="Date, city, vibe, fire restrictions, anything weirder than the list…"
         disabled={isSubmitting}
       />
@@ -111,6 +113,7 @@ type FieldProps = {
   disabled?: boolean;
   placeholder?: string;
   rows?: number;
+  maxLength?: number;
   as?: "input" | "textarea";
 };
 
@@ -122,6 +125,7 @@ function Field({
   disabled,
   placeholder,
   rows,
+  maxLength,
   as = "input",
 }: FieldProps) {
   const baseClass =
@@ -140,6 +144,7 @@ function Field({
           disabled={disabled}
           placeholder={placeholder}
           rows={rows ?? 4}
+          maxLength={maxLength}
           className={baseClass}
         />
       ) : (
@@ -149,6 +154,7 @@ function Field({
           required={required}
           disabled={disabled}
           placeholder={placeholder}
+          maxLength={maxLength}
           className={baseClass}
         />
       )}
